@@ -167,7 +167,8 @@ img{ max-width: 100%; }
     color: var(--color3);
 }
 .valuables-item_description{
-line-height: 2.8rem;
+    line-height: 2.6rem;
+    font-size: 1.5rem;
 }
 
 /* Media Queries */
@@ -179,4 +180,10 @@ line-height: 2.8rem;
 	.container{width: 85%;}
 	.navigation{display:flex;}
 	.navigation-open-movil{display: none;}
+}
+@media (min-width: 980px) {
+	.valuables{
+		flex-direction: row;
+		gap: 2rem;
+	}
 }
