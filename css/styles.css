@@ -170,6 +170,69 @@ img{ max-width: 100%; }
     line-height: 2.6rem;
     font-size: 1.5rem;
 }
+/* Slider */
+.slider{
+	margin: 8rem auto;
+	overflow: hidden;
+}
+.slider-container{
+    display: grid;
+    padding: 0;
+    width: 300%;
+    grid-template-columns: repeat(3, 1fr);
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.slider-container li {
+    list-style: none;
+}
+.slider-container li:nth-child(1){
+	animation-delay: 5s;
+}
+.slider-container li:nth-child(2){
+	animation-delay: 10s;
+}
+.slider-container li:nth-child(3){
+	animation-delay: 15s;
+}
+.slider-slide {
+    width:100%;
+}
+
+@keyframes slider {
+	0%, 30%{
+		margin-left: 0;
+	}
+	30%, 60%{
+		margin-left: -100%;
+	}
+	60%, 90%{
+		margin-left: -200%;
+	}
+	90%, 100%{
+		margin-left: 0;
+	}
+}
+/* Banner Information */
+.banner-information{
+	background-color: var(--color3);
+	color: var(--blanco);
+	text-align: center;
+	padding: 8rem 0;
+}
+.banner-information .title{
+	font-size: 3.5rem;
+}
+.banner-information .description{
+	font-size: 1.6rem;
+	margin: 3rem 0;
+}
+.banner-information .boton{ margin: 0 auto; }
+
+
+
 
 /* Media Queries */
 @media (min-width: 780px) {
