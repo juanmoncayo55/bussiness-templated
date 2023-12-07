@@ -69,6 +69,7 @@ img{ max-width: 100%; }
     width: 100%;
     top: 0;
     z-index: 10;
+    border-bottom: 1px solid #ebebeb;
 }
 .header-container{
 	display: flex;
@@ -133,6 +134,40 @@ img{ max-width: 100%; }
     letter-spacing: .5px;
     margin: 3rem 0;
     line-height: 2.5rem;
+}
+/* About - valuables */
+.about{
+	padding: 8rem 0;
+	border-bottom: 1px solid #ebebeb;
+}
+.about .title{
+    color: var(--color3);
+    font-size: 3.5rem;
+    font-family: var(--flight);
+}
+.about .description{ margin: 4rem 0;line-height: 2.8rem; }
+.valuables{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.valuables-item{
+
+}
+.valuables-item i{
+	display: block;
+    font-size: 4rem;
+    color: var(--color3);
+    margin-bottom: 3rem;
+}
+.valuables-item_title{
+    font-family: var(--fmedium);
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    color: var(--color3);
+}
+.valuables-item_description{
+line-height: 2.8rem;
 }
 
 /* Media Queries */
