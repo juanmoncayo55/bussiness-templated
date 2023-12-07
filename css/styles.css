@@ -1,0 +1,46 @@
+:root{
+	--blanco:  #FFFFFF;
+	--negro: #000000;
+	--color1: #555;
+	--color2: #777;
+	--color3: #0c0633;
+	--color4: #8b62ff;
+	--color5: #3b1bff;
+
+	/* Fuentes */
+	--fblack: 'FiraSans Black';
+	--fbold: 'FiraSans Bold';
+	--fextrabold: 'FiraSans ExtraBold';
+	--flight: 'FiraSans Light';
+	--fmedium: 'FiraSans Medium';
+	--fregular: 'FiraSans Regular';
+	--fsemibold: 'FiraSans SemiBold';
+	--fthin: 'FiraSans Thin';
+}
+
+/* Estilos globales */
+*, *:after, *:before{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+/* Estilos Generales */
+html{
+	box-sizing: inherit;
+	font-size: 62.5%;
+}
+body{
+	font-size: 16px;
+	font-family: var(--fregular);
+	color: var(--color1);
+}
+a{ text-decoration: none; }
+
+/* Reutilizables */
+.tcenter{text-align: center;}
+.container{
+	max-width: 120rem;
+	width: 85%;
+	margin: 0 auto;
+}
