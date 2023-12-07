@@ -44,6 +44,7 @@ img{ max-width: 100%; }
 .cblanco{ color: var(--blanco); }
 .cnegro{ color: var(--negro); }
 .tshadow{ text-shadow: 2px 2px 2px #000; }
+.hideElemento{ display: none; }
 .container{
 	max-width: 120rem;
 	width: 95%;
@@ -67,31 +68,42 @@ img{ max-width: 100%; }
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 }
 .header-container{
 	display: flex;
     justify-content: space-between;
     align-items: center;
 
-    flex-direction: column;
     row-gap: 2rem;
 }
 .navigation{
     display: flex;
-    row-gap: 1rem;
-    flex-direction: column;
+    column-gap: 3rem;
     align-items: center;
 
     /* Ocultando el menú mientras el resto de diseño */
     display: none;
 }
+.navigation-open-movil {
+    border: 1px solid #dddddd;
+    color: #939393;
+    padding: 0.5rem 0.8rem;
+    transition: .1s background-color ease-in-out;
+}
+.navigation-open-movil:hover{
+	background-color: #ddd;
+}
+.navigation-open-movil i{
+	font-size: 2.3rem;
+}
 /* Banner Home */
 .banner-home{
 	background: #613C22 url("../images/img-home.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
-	padding: 10rem 0;
+	padding: 11.5% 0;
 	position: relative;
 }
 .banner-home:before {
@@ -124,10 +136,12 @@ img{ max-width: 100%; }
 }
 
 /* Media Queries */
-@media (min-width: 650px) {
+@media (min-width: 780px) {
 	.banner-home-container{
 		max-width: 55rem;
     	width: 90%;
 	}
 	.container{width: 85%;}
+	.navigation{display:flex;}
+	.navigation-open-movil{display: none;}
 }
