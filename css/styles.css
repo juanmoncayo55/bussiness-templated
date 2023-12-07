@@ -232,7 +232,7 @@ img{ max-width: 100%; }
 .banner-information .boton{ margin: 0 auto; }
 /* Values Portafolio */
 .values-portafolio{
-	padding: 5rem 0;
+	padding: 8rem 0;
 	border-bottom: 1px solid #ebebeb;
 }
 .values-portafolio-conatiner{
@@ -275,6 +275,59 @@ img{ max-width: 100%; }
 	flex: 0 1 33%;
     margin-bottom: 3rem;
 }
+/* Footer*/
+.footer{
+	padding: 6rem 0;
+}
+.foo-container{
+	display: grid;
+}
+.foo1 .title, .foo2 .title, .foo3 .title{
+	font-size: 2.2rem;
+    color: var(--color3);
+    margin-bottom: 1.5rem;
+}
+.foo1 .subtext, .foo2 .copy, .foo2 .copy a{
+	font-size: 1.5rem;
+	color: var(--negro);
+}
+.foo1 .subtext{
+	line-height: 2.5rem;
+}
+.foo2{margin: 3rem 0;}
+.foo2 .copy a:hover{
+	text-decoration: underline;
+	color: var(--color5);
+}
+.socialnetwork{
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+.socialnetwork a{
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialnetwork a i{
+	color: var(--color3);
+	font-size: 1.4rem;
+}
+.formulario{display:flex;}
+.formulario_email{
+	outline: none;
+    border: 1px solid #ebebeb;
+    flex: 1;
+}
+
+
+
+
+
 
 
 
@@ -314,4 +367,9 @@ img{ max-width: 100%; }
 	.values-portafolio-r {
 	    margin-top: 10px;
 	}
+	.foo-container{
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 3rem;
+	}
+	.foo2 {margin: 0;}
 }
