@@ -330,7 +330,7 @@ img{ max-width: 100%; }
     	width: 90%;
 	}
 	.container{width: 85%;}
-	.navigation{display:flex;}
+	.navigation{display:flex;height: unset !important;}
 	.navigation-open-movil{display: none;}	
 }
 @media (min-width: 980px) {
