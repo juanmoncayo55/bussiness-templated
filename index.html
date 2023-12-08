@@ -25,7 +25,7 @@
 			<a href="#" class="header-logo-link">
 				<img src="images/logo.svg" alt="Logotipo de la empresa">
 			</a>
-			<nav class="navigation">
+			<nav class="navigation" id="navigation">
 				<a href="#" class="navigation-link">Home</a>
 				<a href="#" class="navigation-link">About</a>
 				<a href="#" class="navigation-link">Pricing</a>
@@ -154,4 +154,16 @@
 		</div>
 	</footer>
 </body>
+	<script>
+		(function(d, c){
+			const openMobilMenu = d.querySelector("#openMobilMenu"),
+				navigation = d.querySelector("#navigation");
+
+				openMobilMenu.addEventListener('click', function(e){
+					e.preventDefault();
+
+					navigation.classList.toggle("showMenu");
+				})
+		})(document, console.log)
+	</script>
 </html>
